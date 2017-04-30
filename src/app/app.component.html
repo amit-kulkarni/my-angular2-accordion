@@ -1,0 +1,15 @@
+<div id="accordion">
+  <div class="accordion-row">
+    <div class="accordion-row-header" (click)="changeActiveTab(1)" [ngClass]="isActive(1) ? 'accordion-row-header-selected' : 'accordion-row-header-default'">Header 1 </div>
+    <div [ngClass]="isActive(1) ? 'accordion-row-content-expanded' : 'accordion-row-content-collapsed'"> Content 1 </div>
+  </div>
+  <div class="accordion-row">
+    <div class="accordion-row-header" (click)="changeActiveTab(2)" [ngClass]="isActive(2) ? 'accordion-row-header-selected' : 'accordion-row-header-default'">Header 2 </div>
+    <div [ngClass]="isActive(2) ? 'accordion-row-content-expanded' : 'accordion-row-content-collapsed'"> Content 2 </div>
+  </div>
+  <div class="accordion-row">
+    <div class="accordion-row-header" (click)="changeActiveTab(3)" [ngClass]="isActive(3) ? 'accordion-row-header-selected' : 'accordion-row-header-default'">
+    Header 3 </div>
+    <div [ngClass]="isActive(3) ? 'accordion-row-content-expanded' : 'accordion-row-content-collapsed'"> Content 3 </div>
+  </div>
+</div>

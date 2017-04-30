@@ -1,0 +1,32 @@
+#accordion {
+    width: 50%;
+    margin: 0 auto;
+
+}
+.accordion-row {
+    margin-bottom: 5px;
+}
+.accordion-row-header {
+    height: 20px;
+    border-radius: 5px; 
+    text-align: center;
+    font-size: 16px;
+}
+
+.accordion-row-header-default {
+    background: url('/assets/down-arrow.png') no-repeat right center;
+    background-color: darkkhaki;
+}
+
+.accordion-row-header-selected {
+   background: url('/assets/up-arrow.png') no-repeat right center;
+    background-color: lightblue;
+}
+
+.accordion-row-content-collapsed {
+    display: none;
+}
+
+.accordion-row-content-expanded {
+    display: block;
+}
